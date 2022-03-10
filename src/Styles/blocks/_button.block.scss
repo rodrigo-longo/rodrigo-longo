@@ -1,0 +1,61 @@
+.b-btn {
+    text-decoration: none;
+    height: 50px;
+    line-height: 50px;
+    width: 120px;
+    text-align: center;
+    margin: 15px 0;
+    padding: 0 20px;
+    border: 1px solid var(--color-grey);
+    background-color: #333;
+    border-radius: 20px;
+    color: white;
+    font-size: 40px;
+    font-family: "Bebas Neue", cursive;
+
+    &--rl {
+        padding: 0;
+        font-size: 50px;
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+        border-radius: 40px;
+        &:hover {
+            transition: all 2s;
+            color: var(--color-grey);
+            background: fade-in($color: white, $amount: 1);
+            transform: rotate(1440deg);
+        }
+    }
+    &--close {
+        padding: 0;
+        font-size: 40px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        border-radius: 30px;
+
+        &:hover {
+            transition: all 1s;
+            color: var(--color-grey);
+            background: fade-in($color: rgb(245, 99, 99), $amount: 1);
+        }
+    }
+    &--translateUp {
+        &:hover {
+            transition: all 1s;
+            color: var(--color-grey);
+            background: fade-in($color: white, $amount: 1);
+            transform: translateY(-20px);
+        }
+    }
+    &--translateDown {
+        &:hover {
+            transition: all 1s;
+            color: var(--color-grey);
+            background: fade-in($color: white, $amount: 1);
+            transform: translateY(20px);
+        }
+    }
+    
+}
